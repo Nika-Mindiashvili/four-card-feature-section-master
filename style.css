@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgriund: #fafafa;
+  --textColor: #4d4f62;
+  --cardbackground: rgb(255, 255, 255);
+  --lightgreen: #44d3d2;
+  --orange: #fcae4a;
+  --sky: #549ef2;
+  --red: #ea5454;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--backgriund);
+  font-family: "Poppins", sans-serif;
+  padding: 85px 32px 78px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 275;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  color: var(--textColor);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  color: var(--textColor);
+}
+
+.about {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  color: var(--textColor);
+  margin-top: 16px;
+  opacity: 50%;
+}
+
+.card {
+  width: 100%;
+  padding-bottom: 28px;
+  background-color: var(--cardbackground);
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.lightGreen {
+  margin-top: 76px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--textColor);
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: var(--textColor);
+  letter-spacing: 0.09px;
+  opacity: 50%;
+}
+
+.icon {
+  margin-top: 33px;
+  width: 57px;
+  height: 57px;
+  margin-left: auto;
+}
+
+.border {
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--lightgreen);
+}
+
+.content {
+  margin-top: 27px;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  margin-top: 25px;
+}
+
+.red .border {
+  background-color: var(--red);
+}
+
+.orange {
+  margin-top: 23px;
+}
+
+.orange .border {
+  background-color: var(--orange);
+}
+
+.sky {
+  margin-top: 17px;
+}
+.sky .border {
+  background-color: var(--sky);
+}
+
+.card-section {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 350px;
+  }
+
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .description,
+  .title {
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  .card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 68px;
+    column-gap: 30px;
+  }
+
+  .lightGreen,
+  .red,
+  .sky {
+    margin-top: 0px;
+  }
+
+  .orange {
+    margin-top: 30px;
+  }
+
+  .about {
+    width: 540px;
+  }
+}
